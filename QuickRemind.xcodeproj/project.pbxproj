@@ -42,7 +42,7 @@
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-		}};
+		};
 		BD46DB42B3C055888F2CB6CF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -50,7 +50,7 @@
 				5DD0AEA4A63C5D4182F0EC5E /* QuickRemind.app in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-		}};
+		};
 /* End PBXFrameworksBuildPhase section */
 /* Begin PBXGroup section */
 		60AE5D6016CD5A58B54F95D5 = {
@@ -61,7 +61,7 @@
 				55D8801BEFD35BCFA3694CF3 /* Products */,
 			);
 			sourceTree = "<group>";
-		}};
+		};
 		8593D81DD6255AE08806C8AD /* QuickRemind */ = {
 			isa = PBXGroup;
 			children = (
@@ -73,7 +73,7 @@
 			);
 			name = "QuickRemind";
 			sourceTree = "<group>";
-		}};
+		};
 		58FA2C89BF505BD4A962EC90 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -81,7 +81,7 @@
 			);
 			name = "Models";
 			sourceTree = "<group>";
-		}};
+		};
 		ADFCDE9AB0C05AF1BF1B2BDD /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -92,7 +92,7 @@
 			);
 			name = "Services";
 			sourceTree = "<group>";
-		}};
+		};
 		8BC47D7B45E2587CB8136BB6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,7 +103,7 @@
 			);
 			name = "Views";
 			sourceTree = "<group>";
-		}};
+		};
 		EF595DEE464C54D28825406B /* QuickRemindTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,7 +111,7 @@
 			);
 			name = "QuickRemindTests";
 			sourceTree = "<group>";
-		}};
+		};
 		55D8801BEFD35BCFA3694CF3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,7 +120,7 @@
 			);
 			name = "Products";
 			sourceTree = "<group>";
-		}};
+		};
 		98F67A9A0CE65FFDB7474386 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXGroup section */
 /* Begin PBXSourcesBuildPhase section */
@@ -140,7 +140,7 @@
 				D354D8F692175F618AC42CE2 /* in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-		}};
+		};
 		1CEF86FF198F52348E93E320 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -148,7 +148,7 @@
 				0773C85BF3D35BE59AC526D8 /* in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-		}};
+		};
 /* End PBXSourcesBuildPhase section */
 /* Begin PBXResourcesBuildPhase section */
 		4F865EBD4DB659DA97359A3F /* Resources */ = {
@@ -157,7 +157,7 @@
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-		}};
+		};
 /* End PBXResourcesBuildPhase section */
 /* Begin PBXNativeTarget section */
 		EF5475F0BF5D577E84A48E1F /* QuickRemind */ = {
@@ -176,7 +176,7 @@
 			productName = QuickRemind;
 			productReference = 139E4F287DD15B26AFD007BE /* QuickRemind.app */;
 			productType = "com.apple.product-type.application";
-		}};
+		};
 		30E8616EF094536FB882A205 /* QuickRemindTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 889B3761CDF959D59CB73D9A /* Build configuration list for PBXNativeTarget "QuickRemindTests" */;
@@ -192,7 +192,7 @@
 			productName = QuickRemindTests;
 			productReference = B536627B33C950879178822D /* QuickRemindTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		}};
+		};
 /* End PBXNativeTarget section */
 /* Begin PBXProject section */
 		EFBD6F425F1C5A0A8631D19A /* Project object */ = {
@@ -227,7 +227,7 @@
 				EF5475F0BF5D577E84A48E1F /* QuickRemind */,
 				30E8616EF094536FB882A205 /* QuickRemindTests */,
 			);
-		}};
+		};
 /* End PBXProject section */
 		20ABEA87766D58F99693CC8B /* Build configuration list for PBXProject */ = {
 			isa = XCConfigurationList;
@@ -237,7 +237,7 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
-		}};
+		};
 		AE4D04787A005BC0B7B676E5 /* Build configuration list for PBXNativeTarget "QuickRemind" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -246,7 +246,7 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
-		}};
+		};
 		889B3761CDF959D59CB73D9A /* Build configuration list for PBXNativeTarget "QuickRemindTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -255,7 +255,7 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
-		}};
+		};
 		ECD0EFFE894A55159CBE2F77 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -276,7 +276,7 @@
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
-		}};
+		};
 		D145E1478D005C03846CBBE4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -297,7 +297,7 @@
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
-		}};
+		};
 		EA1C74999988540B81BCC6D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -321,11 +321,10 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				CODE_SIGN_ENTITLEMENTS = QuickRemind/QuickRemind.entitlements;
-				GENERATE_INFOPLIST_FILE = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
-		}};
+		};
 		F666151320365C76A1361F59 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -349,11 +348,10 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				CODE_SIGN_ENTITLEMENTS = QuickRemind/QuickRemind.entitlements;
-				GENERATE_INFOPLIST_FILE = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;
-		}};
+		};
 		099C6C771FEA5ED8BB073BE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -376,12 +374,10 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				GENERATE_INFOPLIST_FILE = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
-		}};
+		};
 		17CB26B531225BFD9CFAA103 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -404,12 +400,10 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				GENERATE_INFOPLIST_FILE = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;
-		}};
+		};
 	};
 	rootObject = EFBD6F425F1C5A0A8631D19A /* Project object */;
 }

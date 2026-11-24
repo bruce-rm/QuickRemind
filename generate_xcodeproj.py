@@ -113,7 +113,7 @@ def frameworks_section():
         "\t\t\tfiles = (",
         "\t\t\t);",
         "\t\t\trunOnlyForDeploymentPostprocessing = 0;",
-        "\t\t}};",
+        "\t\t};",
         f"\t\t{TEST_FRAMEWORKS_PHASE} /* Frameworks */ = {{",
         "\t\t\tisa = PBXFrameworksBuildPhase;",
         "\t\t\tbuildActionMask = 2147483647;",
@@ -121,7 +121,7 @@ def frameworks_section():
         f"\t\t\t\t{TEST_TARGET_DEP} /* QuickRemind.app in Frameworks */,",
         "\t\t\t);",
         "\t\t\trunOnlyForDeploymentPostprocessing = 0;",
-        "\t\t}};",
+        "\t\t};",
         "/* End PBXFrameworksBuildPhase section */",
     ])
 
@@ -136,7 +136,7 @@ def group_section():
     lines.append(f"\t\t\t\t{PRODUCTS_GROUP} /* Products */,")
     lines.append("\t\t\t);")
     lines.append("\t\t\tsourceTree = \"<group>\";")
-    lines.append("\t\t}};")
+    lines.append("\t\t};")
 
     def grp(gid, name, children):
         lines.append(f"\t\t{gid} /* {name} */ = {{")
@@ -147,7 +147,7 @@ def group_section():
         lines.append("\t\t\t);")
         lines.append(f"\t\t\tname = {q(name)};")
         lines.append("\t\t\tsourceTree = \"<group>\";")
-        lines.append("\t\t}};")
+        lines.append("\t\t};")
 
     ref_by_path = {p: (fid, name) for fid, p, name, _ in file_refs}
     app_children = []
@@ -179,7 +179,7 @@ def sources_section():
         lines.append(f"\t\t\t\t{bid} /* in Sources */,")
     lines.append("\t\t\t);")
     lines.append("\t\t\trunOnlyForDeploymentPostprocessing = 0;")
-    lines.append("\t\t}};")
+    lines.append("\t\t};")
     lines.append(f"\t\t{TEST_SOURCES_PHASE} /* Sources */ = {{")
     lines.append("\t\t\tisa = PBXSourcesBuildPhase;")
     lines.append("\t\t\tbuildActionMask = 2147483647;")
@@ -188,7 +188,7 @@ def sources_section():
         lines.append(f"\t\t\t\t{bid} /* in Sources */,")
     lines.append("\t\t\t);")
     lines.append("\t\t\trunOnlyForDeploymentPostprocessing = 0;")
-    lines.append("\t\t}};")
+    lines.append("\t\t};")
     lines.append("/* End PBXSourcesBuildPhase section */")
     return "\n".join(lines)
 
@@ -202,7 +202,7 @@ def resources_section():
         "\t\t\tfiles = (",
         "\t\t\t);",
         "\t\t\trunOnlyForDeploymentPostprocessing = 0;",
-        "\t\t}};",
+        "\t\t};",
         "/* End PBXResourcesBuildPhase section */",
     ])
 
@@ -226,7 +226,7 @@ def native_target_section():
         "\t\t\tproductName = QuickRemind;",
         f"\t\t\tproductReference = {APP_PRODUCT} /* QuickRemind.app */;",
         "\t\t\tproductType = \"com.apple.product-type.application\";",
-        "\t\t}};",
+        "\t\t};",
         f"\t\t{TEST_TARGET} /* QuickRemindTests */ = {{",
         "\t\t\tisa = PBXNativeTarget;",
         f"\t\t\tbuildConfigurationList = {TEST_CONFIG_LIST} /* Build configuration list for PBXNativeTarget \"QuickRemindTests\" */;",
@@ -242,7 +242,7 @@ def native_target_section():
         "\t\t\tproductName = QuickRemindTests;",
         f"\t\t\tproductReference = {TEST_PRODUCT} /* QuickRemindTests.xctest */;",
         "\t\t\tproductType = \"com.apple.product-type.bundle.unit-test\";",
-        "\t\t}};",
+        "\t\t};",
         "/* End PBXNativeTarget section */",
     ])
 
@@ -282,7 +282,7 @@ def project_section():
         f"\t\t\t\t{APP_TARGET} /* QuickRemind */,",
         f"\t\t\t\t{TEST_TARGET} /* QuickRemindTests */,",
         "\t\t\t);",
-        "\t\t}};",
+        "\t\t};",
         "/* End PBXProject section */",
     ])
 
@@ -297,7 +297,7 @@ def config_list(gid, name, debug_id, release_id):
         "\t\t\t);",
         "\t\t\tdefaultConfigurationIsVisible = 0;",
         "\t\t\tdefaultConfigurationName = Release;",
-        "\t\t}};",
+        "\t\t};",
     ])
 
 
@@ -362,7 +362,7 @@ def config(gid, name, is_app, is_test, is_debug):
             common += ["\t\t\t\tSWIFT_OPTIMIZATION_LEVEL = \"-O\";"]
         else:
             common += ["\t\t\t\tSWIFT_OPTIMIZATION_LEVEL = \"-Onone\";"]
-    common += ["\t\t\t};", f"\t\t\tname = {name};", "\t\t}};",]
+    common += ["\t\t\t};", f"\t\t\tname = {name};", "\t\t};",]
     return "\n".join(common)
 
 
