@@ -1,7 +1,13 @@
 # Windows 上把 QuickRemind 推到 GitHub 并构建 IPA
 
+> **当前状态（已全部完成到推送这一步）**
+> - 仓库已创建：https://github.com/bruce-rm/QuickRemind
+> - 代码已推送到 `main` 分支，本地与远程提交一致（`b310629`）
+> - 工作流文件 `.github/workflows/build-ipa.yml` 已确认在仓库中（5372 bytes）
+> - 接下来的动作：在网页上 **Run workflow** 构建并下载 IPA（见第 3 步）
+
 本地仓库已经初始化完成（`.git/` 已建好，分支 `main`，首次提交已做）。
-你需要做的只剩：建一个 GitHub 空仓库 → 推上去 → 在网页点一下按钮 → 下载 IPA。
+下面的步骤记录了完整流程，供以后重建仓库或排查问题时参考。
 
 ---
 
@@ -104,6 +110,27 @@ git push
 
 - [x] `git init -b main` 初始化仓库
 - [x] `.gitignore` 排除构建产物（`build/`、`staging/`、`*.ipa`、Python 缓存等）
+- [x] `.gitattributes` 锁定 LF 换行符，避免脚本在 macOS 上执行失败
 - [x] 首次提交完成
-- [ ] 关联远程仓库并推送（需要你的 GitHub 地址和 token）
-- [ ] 网页上 Run workflow 构建 IPA
+- [x] 创建 GitHub 仓库 `bruce-rm/QuickRemind`
+- [x] 推送 `main` 分支，工作流文件已上传
+- [x] 远程地址已清理，git 配置中无 token 残留
+- [ ] 网页上 Run workflow 构建 IPA（需要你操作，见第 3 步）
+
+## 以后本地更新代码怎么推送
+
+远程地址是干净的 HTTPS，推送时需要认证。两种方式：
+
+**方式 A：让 Windows 记住 token（推荐）**
+
+```bash
+git config --global credential.helper manager
+```
+
+第一次 push 时 Username 填 `bruce-rm`，Password 填 token，之后 Windows 凭据管理器会记住，不用再输。
+
+**方式 B：每次用临时 URL（不保存凭据）**
+
+```bash
+git push https://bruce-rm:你的TOKEN@github.com/bruce-rm/QuickRemind.git main
+```
