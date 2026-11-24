@@ -393,7 +393,7 @@ enum NaturalLanguageParser {
         // 下周一 / 下个星期一
         let nextWeekPattern = "下(个)?(周|星期|礼拜)([一二三四五六日天])"
         if let m = firstMatch(nextWeekPattern, in: text),
-           let dayChar = captured(m, in: text, group: 3).first,
+           let dayChar = captured(m, in: text, group: 3).flatMap({ $0.first }),
            let weekday = weekdayNumber(dayChar) {
             let date = nextWeekday(weekday, from: today, calendar: calendar, nextWeek: true)
             removeRange(m.range, from: &text)
@@ -403,7 +403,7 @@ enum NaturalLanguageParser {
         // 这周五 / 本周五 / 周五
         let thisWeekPattern = "(这|本)?(周|星期|礼拜)([一二三四五六日天])"
         if let m = firstMatch(thisWeekPattern, in: text),
-           let dayChar = captured(m, in: text, group: 3).first,
+           let dayChar = captured(m, in: text, group: 3).flatMap({ $0.first }),
            let weekday = weekdayNumber(dayChar) {
             let date = nextWeekday(weekday, from: today, calendar: calendar, nextWeek: false)
             removeRange(m.range, from: &text)
