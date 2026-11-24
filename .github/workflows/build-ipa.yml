@@ -31,6 +31,14 @@ jobs:
           sudo xcode-select -s "$XCODE_PATH/Contents/Developer"
           xcodebuild -version
 
+      - name: 用 XcodeGen 重新生成标准工程
+        run: |
+          brew install xcodegen
+          rm -rf QuickRemind.xcodeproj
+          xcodegen generate --spec project.yml
+          plutil -lint QuickRemind.xcodeproj/project.pbxproj
+          xcodebuild -list -project QuickRemind.xcodeproj
+
       # ---------- 无签名路径：零配置，产出可用 Sideloadly 重签的 IPA ----------
       - name: 构建 App（无签名）
         if: inputs.signing == 'unsigned'
