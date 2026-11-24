@@ -1,0 +1,52 @@
+name: QuickRemind
+options:
+  bundleIdPrefix: com.quickremind
+  deploymentTarget: "17.0"
+  xcodeVersion: "26"
+  generateEmptyDirectories: true
+
+settings:
+  base:
+    PRODUCT_NAME: 速记
+    DEVELOPMENT_TEAM: ""
+    CODE_SIGN_STYLE: Automatic
+    TARGETED_DEVICE_FAMILY: "1,2"
+    SWIFT_VERSION: "5.10"
+    SWIFT_EMIT_LOC_STRINGS: YES
+
+targets:
+  QuickRemind:
+    type: application
+    platform: iOS
+    sources:
+      - path: QuickRemind
+        excludes:
+          - "**/.DS_Store"
+    info:
+      path: QuickRemind/Info.plist
+      properties:
+        CFBundleDisplayName: 速记
+        NSAlarmKitUsageDescription: 速记需要创建闹钟，才能在你设定的时间以全屏铃声提醒你，即使手机静音或开启专注模式也不会漏掉。
+        UIBackgroundModes:
+          - audio
+    entitlements:
+      path: QuickRemind/QuickRemind.entitlements
+      properties: {}
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.quickremind.app
+        ENABLE_PREVIEWS: YES
+      configs:
+        Debug:
+          SWIFT_ACTIVE_COMPILATION_CONDITIONS: DEBUG
+
+  QuickRemindTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: QuickRemindTests
+    dependencies:
+      - target: QuickRemind
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.quickremind.tests

@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+/* Begin PBXBuildFile section */
+		7B538AF824425D5E8E211F40 /* QuickRemind in Sources */ = {isa = PBXBuildFile; fileRef = 61C1276FC2F6515DB9444291 /* QuickRemind */; };
+		BFE47A9DC6AA52ADB1BF89B3 /* ParseResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEBD32B760A5A07B76E1B72 /* ParseResult.swift */; };
+		735ACE9F91F85C13820AFA94 /* NaturalLanguageParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B5AABD1A935F3D8C165A26 /* NaturalLanguageParser.swift */; };
+		4576314C698A55A7ADA3FE03 /* ReminderStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD1B8EBF22A564EBE895CE7 /* ReminderStore.swift */; };
+		4BDC53454F1650918A2E598D /* AlarmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CEE6EB82DE5BE89258177E /* AlarmService.swift */; };
+		B59D273A305B5BABB6BEEBE4 /* AlarmKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97675E2007DC5A90BC1CACA4 /* AlarmKitService.swift */; };
+		01A097930D2A5FA9B46E541E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCC59ABC5CF5916B2542F0B /* ContentView.swift */; };
+		A552D98AC94C52A88220A74E /* ParsePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9395EF3BD47512B86A2BE79 /* ParsePreview.swift */; };
+		59E2514C001C541B98F3D5BB /* ReminderRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B61E26493C57C58C8EA25C /* ReminderRow.swift */; };
+		D354D8F692175F618AC42CE2 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BB03B96907580182EAA0DF /* SettingsView.swift */; };
+		0773C85BF3D35BE59AC526D8 /* NaturalLanguageParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84637810B17C5EEA9E73FE6C /* NaturalLanguageParserTests.swift */; };
+		5DD0AEA4A63C5D4182F0EC5E /* QuickRemind.app in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B79CFC2D8F547896435CE6 /* QuickRemind.app */; };
+/* End PBXBuildFile section */
+/* Begin PBXFileReference section */
+		139E4F287DD15B26AFD007BE /* QuickRemind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickRemind.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B536627B33C950879178822D /* QuickRemindTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickRemindTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6B79CFC2D8F547896435CE6 /* QuickRemind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickRemind.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		61C1276FC2F6515DB9444291 /* QuickRemind */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "QuickRemind"; path = "QuickRemindApp.swift"; sourceTree = "<group>"; };
+		BFEBD32B760A5A07B76E1B72 /* ParseResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ParseResult.swift"; path = "Models/ParseResult.swift"; sourceTree = "<group>"; };
+		95B5AABD1A935F3D8C165A26 /* NaturalLanguageParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "NaturalLanguageParser.swift"; path = "Services/NaturalLanguageParser.swift"; sourceTree = "<group>"; };
+		1CD1B8EBF22A564EBE895CE7 /* ReminderStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ReminderStore.swift"; path = "Services/ReminderStore.swift"; sourceTree = "<group>"; };
+		83CEE6EB82DE5BE89258177E /* AlarmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "AlarmService.swift"; path = "Services/AlarmService.swift"; sourceTree = "<group>"; };
+		97675E2007DC5A90BC1CACA4 /* AlarmKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "AlarmKitService.swift"; path = "Services/AlarmKitService.swift"; sourceTree = "<group>"; };
+		DCCC59ABC5CF5916B2542F0B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ContentView.swift"; path = "Views/ContentView.swift"; sourceTree = "<group>"; };
+		E9395EF3BD47512B86A2BE79 /* ParsePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ParsePreview.swift"; path = "Views/ParsePreview.swift"; sourceTree = "<group>"; };
+		77B61E26493C57C58C8EA25C /* ReminderRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ReminderRow.swift"; path = "Views/ReminderRow.swift"; sourceTree = "<group>"; };
+		B8BB03B96907580182EAA0DF /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "SettingsView.swift"; path = "Views/SettingsView.swift"; sourceTree = "<group>"; };
+		84637810B17C5EEA9E73FE6C /* NaturalLanguageParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "NaturalLanguageParserTests.swift"; path = "NaturalLanguageParserTests.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+/* Begin PBXFrameworksBuildPhase section */
+		210BCF7FECE6556E8BC27811 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		}};
+		BD46DB42B3C055888F2CB6CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DD0AEA4A63C5D4182F0EC5E /* QuickRemind.app in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		}};
+/* End PBXFrameworksBuildPhase section */
+/* Begin PBXGroup section */
+		60AE5D6016CD5A58B54F95D5 = {
+			isa = PBXGroup;
+			children = (
+				8593D81DD6255AE08806C8AD /* QuickRemind */,
+				EF595DEE464C54D28825406B /* QuickRemindTests */,
+				55D8801BEFD35BCFA3694CF3 /* Products */,
+			);
+			sourceTree = "<group>";
+		}};
+		8593D81DD6255AE08806C8AD /* QuickRemind */ = {
+			isa = PBXGroup;
+			children = (
+				58FA2C89BF505BD4A962EC90 /* Models */,
+				ADFCDE9AB0C05AF1BF1B2BDD /* Services */,
+				8BC47D7B45E2587CB8136BB6 /* Views */,
+				61C1276FC2F6515DB9444291 /* QuickRemind */,
+				98F67A9A0CE65FFDB7474386 /* Info.plist */,
+			);
+			name = "QuickRemind";
+			sourceTree = "<group>";
+		}};
+		58FA2C89BF505BD4A962EC90 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BFEBD32B760A5A07B76E1B72 /* ParseResult.swift */,
+			);
+			name = "Models";
+			sourceTree = "<group>";
+		}};
+		ADFCDE9AB0C05AF1BF1B2BDD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				95B5AABD1A935F3D8C165A26 /* NaturalLanguageParser.swift */,
+				1CD1B8EBF22A564EBE895CE7 /* ReminderStore.swift */,
+				83CEE6EB82DE5BE89258177E /* AlarmService.swift */,
+				97675E2007DC5A90BC1CACA4 /* AlarmKitService.swift */,
+			);
+			name = "Services";
+			sourceTree = "<group>";
+		}};
+		8BC47D7B45E2587CB8136BB6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DCCC59ABC5CF5916B2542F0B /* ContentView.swift */,
+				E9395EF3BD47512B86A2BE79 /* ParsePreview.swift */,
+				77B61E26493C57C58C8EA25C /* ReminderRow.swift */,
+				B8BB03B96907580182EAA0DF /* SettingsView.swift */,
+			);
+			name = "Views";
+			sourceTree = "<group>";
+		}};
+		EF595DEE464C54D28825406B /* QuickRemindTests */ = {
+			isa = PBXGroup;
+			children = (
+				84637810B17C5EEA9E73FE6C /* NaturalLanguageParserTests.swift */,
+			);
+			name = "QuickRemindTests";
+			sourceTree = "<group>";
+		}};
+		55D8801BEFD35BCFA3694CF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				139E4F287DD15B26AFD007BE /* QuickRemind.app */,
+				B536627B33C950879178822D /* QuickRemindTests.xctest */,
+			);
+			name = "Products";
+			sourceTree = "<group>";
+		}};
+		98F67A9A0CE65FFDB7474386 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXGroup section */
+/* Begin PBXSourcesBuildPhase section */
+		71549974A74053C489ED8D78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B538AF824425D5E8E211F40 /* in Sources */,
+				BFE47A9DC6AA52ADB1BF89B3 /* in Sources */,
+				735ACE9F91F85C13820AFA94 /* in Sources */,
+				4576314C698A55A7ADA3FE03 /* in Sources */,
+				4BDC53454F1650918A2E598D /* in Sources */,
+				B59D273A305B5BABB6BEEBE4 /* in Sources */,
+				01A097930D2A5FA9B46E541E /* in Sources */,
+				A552D98AC94C52A88220A74E /* in Sources */,
+				59E2514C001C541B98F3D5BB /* in Sources */,
+				D354D8F692175F618AC42CE2 /* in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		}};
+		1CEF86FF198F52348E93E320 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0773C85BF3D35BE59AC526D8 /* in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		}};
+/* End PBXSourcesBuildPhase section */
+/* Begin PBXResourcesBuildPhase section */
+		4F865EBD4DB659DA97359A3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		}};
+/* End PBXResourcesBuildPhase section */
+/* Begin PBXNativeTarget section */
+		EF5475F0BF5D577E84A48E1F /* QuickRemind */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE4D04787A005BC0B7B676E5 /* Build configuration list for PBXNativeTarget "QuickRemind" */;
+			buildPhases = (
+				71549974A74053C489ED8D78 /* Sources */,
+				210BCF7FECE6556E8BC27811 /* Frameworks */,
+				4F865EBD4DB659DA97359A3F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuickRemind;
+			productName = QuickRemind;
+			productReference = 139E4F287DD15B26AFD007BE /* QuickRemind.app */;
+			productType = "com.apple.product-type.application";
+		}};
+		30E8616EF094536FB882A205 /* QuickRemindTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 889B3761CDF959D59CB73D9A /* Build configuration list for PBXNativeTarget "QuickRemindTests" */;
+			buildPhases = (
+				1CEF86FF198F52348E93E320 /* Sources */,
+				BD46DB42B3C055888F2CB6CF /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuickRemindTests;
+			productName = QuickRemindTests;
+			productReference = B536627B33C950879178822D /* QuickRemindTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		}};
+/* End PBXNativeTarget section */
+/* Begin PBXProject section */
+		EFBD6F425F1C5A0A8631D19A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					EF5475F0BF5D577E84A48E1F = {
+						CreatedOnToolsVersion = 26.0;
+					};
+					30E8616EF094536FB882A205 = {
+						CreatedOnToolsVersion = 26.0;
+						TestTargetID = EF5475F0BF5D577E84A48E1F;
+					};
+				};
+			};
+			buildConfigurationList = 20ABEA87766D58F99693CC8B /* Build configuration list for PBXProject "QuickRemind" */;
+			compatibilityVersion = "Xcode 16.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 60AE5D6016CD5A58B54F95D5;
+			productRefGroup = 55D8801BEFD35BCFA3694CF3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF5475F0BF5D577E84A48E1F /* QuickRemind */,
+				30E8616EF094536FB882A205 /* QuickRemindTests */,
+			);
+		}};
+/* End PBXProject section */
+		20ABEA87766D58F99693CC8B /* Build configuration list for PBXProject */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECD0EFFE894A55159CBE2F77 /* Debug */,
+				D145E1478D005C03846CBBE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		}};
+		AE4D04787A005BC0B7B676E5 /* Build configuration list for PBXNativeTarget "QuickRemind" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA1C74999988540B81BCC6D8 /* Debug */,
+				F666151320365C76A1361F59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		}};
+		889B3761CDF959D59CB73D9A /* Build configuration list for PBXNativeTarget "QuickRemindTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				099C6C771FEA5ED8BB073BE5 /* Debug */,
+				17CB26B531225BFD9CFAA103 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		}};
+		ECD0EFFE894A55159CBE2F77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		}};
+		D145E1478D005C03846CBBE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		}};
+		EA1C74999988540B81BCC6D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QuickRemind/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = 速记;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.quickremind.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				CODE_SIGN_ENTITLEMENTS = QuickRemind/QuickRemind.entitlements;
+				GENERATE_INFOPLIST_FILE = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		}};
+		F666151320365C76A1361F59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QuickRemind/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = 速记;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.quickremind.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				CODE_SIGN_ENTITLEMENTS = QuickRemind/QuickRemind.entitlements;
+				GENERATE_INFOPLIST_FILE = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		}};
+		099C6C771FEA5ED8BB073BE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QuickRemind/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = 速记;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.quickremind.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				GENERATE_INFOPLIST_FILE = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		}};
+		17CB26B531225BFD9CFAA103 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QuickRemind/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = 速记;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.quickremind.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				GENERATE_INFOPLIST_FILE = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		}};
+	};
+	rootObject = EFBD6F425F1C5A0A8631D19A /* Project object */;
+}
